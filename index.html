@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Прием на работу</title>
+</head>
+<body>
+
+    <div class="question question-common">
+      <p>Для начала давай определимся на какую вакансию ты претендуешь?</p>
+        <div><input name="question question-position" type="radio" value="designer">Веб-дизайнер</div>
+        <div><input name="question question-position" type="radio" value="test">Тестировщик</div>
+        <div><input name="question question-position" type="radio" value="front">Джуниор фронтенд разработчик</div>
+      <button class="question-button">Дальше</button>
+    </div>
+
+    <div class="question question-common">
+      <p>Есть ли у тебя опыт?</p>
+        <div><input name="question question-exp" type="radio" value="20">Больше 5 лет работаю по этой специальности</div>
+        <div><input name="question question-exp" type="radio" value="10">Ну немножко поработать успел</div>
+        <div><input name="question question-exp" type="radio" value="0">Чтобы получить опыт нужна работа, а я тут ваши тесты прохожу</div>
+      <button class="question-button">Дальше</button>
+    </div>
+
+    <!-- DESIGNER -->
+    <div class="question questions-designer">
+        <p>В какой программе делаешь макеты?</p>
+          <div><input name="question" type="radio" value="15">Figma</div>
+          <div><input name="question" type="radio" value="-10">Photoshop</div>
+          <div><input name="question" type="radio" value="0">В такой, о которой вы не слышали</div>
+        <button class="question-button">Дальше</button>
+    </div>
+    
+    <div class="question questions-designer">
+        <p>Любишь играться со шрифтами?</p>
+          <div><input name="question" type="radio" value="20">Я живу этим</div>
+          <div><input name="question" type="radio" value="10">Если очень попросите</div>
+          <div><input name="question" type="radio" value="30">Я сам/сама создаю шрифты</div>
+          <div><input name="question" type="radio" value="-5">Нет, в игры не играю</div>
+        <button class="question-button">Дальше</button>
+    </div>
+
+    <div class="question questions-designer">
+        <p>А белый цвет сможешь белее сделать?</p>
+          <div><input name="question" type="radio" value="15">Я же говорил(а), что этого заказчика забанить надо</div>
+          <div><input name="question" type="radio" value="5">Пусть заказчик приедет и на Ретине посмотрит ещё разок</div>
+          <div><input name="question" type="radio" value="-10">Конечно сделаю, если #fff недостаточно</div>
+        <button class="question-button">Дальше</button>
+    </div>
+
+    <div class="question questions-designer">
+        <p>Последний вопрос: в какую стороны расти планируешь?</p>
+          <div><input name="question" type="radio" value="20">До арт-дира, естественно</div>
+          <div><input name="question" type="radio" value="10">В какую-то одну сферу хочу, но пока не знаю какую</div>
+          <div><input name="question" type="radio" value="5">Пока расту в ширину</div>
+        <button class="question-button">Дальше</button>
+    </div>
+
+    <!-- DESIGNER + -->
+    <div class="question questions-designer__add">
+        <p>Кстати, а оценку задач ты как даёшь?</p>
+          <div><input name="question" type="radio" value="1.5">По часам</div>
+          <div><input name="question" type="radio" value="1.2">По дням</div>
+          <div><input name="question" type="radio" value="0.7">По наитию</div>
+        <button class="question-button">Дальше</button>
+    </div>
+
+    <!-- TEST -->
+    <div class="question questions-test">
+        <p>Прости, но такой вакансии пока нет, может на кого-то другого хочешь попробоваться?</p>
+        <button class="question-button">Возможно</button>
+    </div>
+    
+    <!-- FRONT -->
+    <div class="question questions-frontend">
+        <p>Начнём с простого, div от span отличишь?</p>
+          <div><input name="question" type="radio" value="15">Естественно, первый для контейнеров, второй для текста</div>
+          <div><input name="question" type="radio" value="10">Код пишут компьютеры, пусть они и отличают</div>
+          <div><input name="question" type="radio" value="-5">Думаю, что да</div>
+        <button class="question-button">Дальше</button>
+    </div>
+    
+    <div class="question questions-frontend">
+        <p>Окей, а с JS у тебя как?</p>
+          <div><input name="question" type="radio" value="-30">Я как-то больше по JQuery</div>
+          <div><input name="question" type="radio" value="5">Норм, прошёл курс</div>
+          <div><input name="question" type="radio" value="20">На чистом JS уже не первый год пишу</div>
+        <button class="question-button">Дальше</button>
+    </div>
+
+    <div class="question questions-frontend">
+        <p>Насколько ты любишь PHP?</p>
+          <input name="question" type="number" min="0" max="10">Введите число от 0 до 10, где 0 — это совершенно не люблю, а 10 — обожаю
+        <button class="question-button">Дальше</button>
+    </div>
+
+    <div class="question questions-frontend">
+        <p>Сколько дней в неделю планируешь ходить в офис?</p>
+          <div><input name="question" type="radio" value="-20">Я хочу работать удалённо</div>
+          <div><input name="question" type="radio" value="5">3-4 дня в неделю будет норм</div>
+          <div><input name="question" type="radio" value="20">Я перееду в ваш офис, крепитесь</div>
+        <button class="question-button">Дальше</button>
+    </div>
+
+    <!-- FRONT + -->
+    <div class="question questions-frontend__add">
+        <p>Кстати, а оценку задач ты как даёшь?</p>
+          <div><input name="question" type="radio" value="1.8">По часам</div>
+          <div><input name="question" type="radio" value="1.3">По дням</div>
+          <div><input name="question" type="radio" value="0.6">По наитию</div>
+        <button class="question-button">Дальше</button>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
